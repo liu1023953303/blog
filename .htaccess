@@ -1,0 +1,17 @@
+
+
+# For all files not found in the file system, reroute the request to the
+# "index.php" front controller, keeping the query string intact
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
+
+</IfModule>
