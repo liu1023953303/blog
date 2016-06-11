@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>" type="text/css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('plugins/highlights/styles/default.css'); ?>" type="text/css">
     <!--STYLES END-->
-   <?php $this->header("generator=&template="); ?> 
+    <!-- 百度统计 -->
+    <script src="<?php $this->options->themeUrl('js/baidu-tj.js'); ?>"></script>
+   <?php $this->header("generator=&template="); ?>
 </head>
 
     <body>
